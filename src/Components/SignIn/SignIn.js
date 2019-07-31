@@ -27,7 +27,7 @@ onSubmitSignIn=() => {
      .then(user => {
         if(user.id){
           this.props.loadUser(user);
-          this.props.onRouteChange('ghar');
+          this.props.onRouteChange('signin');
         }
       })
 }

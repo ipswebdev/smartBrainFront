@@ -78,16 +78,17 @@ onSubmitSignIn=() => {
 		        	onChange={this.onPasswordChange}
 		        	/>
 		      	</div>
-		    	</fieldset>
+		    	</fieldset> 
 		    		<div className="">
 		      		<input
 		      		onClick={this.onSubmitSignIn} 
 		      		className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" 
 		      		type="submit"
-		      		value="Register!!" />
+		      		value="register!!" 
+		      		onClick={ () => onRouteChange('ghar')} />
 		    		</div>
-		    <div className="lh-copy mt3">
-		      	<p onClick={ () => onRouteChange('signin')}  className="f6 link dim black db pointer"></p>
+		    	<div className="lh-copy mt3">
+		      	<p onClick={ () => onRouteChange('ghar')}  className="f6 link dim black db pointer"></p>
 		        
 		        </div>
 		  </form>

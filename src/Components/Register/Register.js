@@ -23,7 +23,7 @@ onPasswordChange = (event) =>{
 	this.setState({password: event.target.value})
 }
 onSubmitSignIn=() => {
-	fetch('http://localhost:3000/register',{
+	fetch('https://powerful-brushlands-55300.herokuapp.com/register',{
 		method:'Post',
 		headers:{'Content-Type':'application/json'},
 		body:JSON.stringify({
